@@ -22,7 +22,7 @@ public class MyController {
 	public ModelAndView index(int n1,int n2,String calc) {
 		ModelAndView mv = new ModelAndView();
 		int res = service.calculate(n1, n2, calc);
-		mv.addObject("msg","The result for "+calc+" is "+ res);
+		mv.addObject("msg","The Answer for "+calc+" is "+ res);
 		mv.setViewName("index.jsp");
 		return mv;
 			
